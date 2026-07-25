@@ -2,6 +2,7 @@
   "name": "dbaffinity",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://rahul-3229.github.io/My-Portfolio",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@testing-library/jest-dom": "^5.17.0",
@@ -24,7 +25,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build-tailwind-css": "tailwindcss build src/styles.css -o public/styles.css"
+    "build-tailwind-css": "tailwindcss build src/styles.css -o public/styles.css",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -46,6 +49,7 @@
   },
   "devDependencies": {
     "ajv": "^7.2.4",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.5.1",
     "postcss-cli": "^11.0.0",
     "tailwindcss": "^4.0.3"
