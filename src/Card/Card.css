@@ -150,3 +150,21 @@
 }
 
 
+@media (max-width:600px)
+{
+    .Card
+    {
+        height:34vh;
+        width:46%;
+    }
+
+    .CardHead
+    {
+        font-size: 1.0rem !important;
+    }
+
+    .CardPara
+    {
+        font-size: 0.48rem;
+    }
+}

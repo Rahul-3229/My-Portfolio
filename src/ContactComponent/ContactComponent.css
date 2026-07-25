@@ -18,3 +18,31 @@
     text-decoration: none;
     color:black;
 }
+
+@media(max-width:600px)
+{
+    .ContactComponent
+{
+    display:flex;
+    flex-direction: column;
+    /* gap: 20px; */
+    width: 100%;
+    height: 10vh;
+    /* border:0.1rem solid red; */
+}
+.ContactComponentSVG
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:10%;
+    position: absolute;
+    margin-top:-10%;
+}
+
+.section7controlText
+{
+    font-size: 0.8rem !important;
+}
+
+}

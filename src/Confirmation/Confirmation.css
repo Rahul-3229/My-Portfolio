@@ -20,3 +20,14 @@
     top:85vh;
     left:30vw;
 }
+
+@media(max-width:600px)
+{
+    .ConfirmationHeading
+{
+    top:70vh;
+    left:3vw;
+    text-align: center;
+    
+}
+}

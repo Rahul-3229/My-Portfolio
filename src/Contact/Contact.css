@@ -121,4 +121,86 @@ input::-webkit-inner-spin-button {
     background: #f1c40f;
     box-shadow:  6px 6px 10px #b5930b,
     -6px -6px 10px #fff513;
+    color:black;
+}
+
+
+
+@media(max-width:600px)
+{
+    .Contact
+{
+    width:80vw;
+    height:70vh;
+    margin: auto;
+    display: flex;
+    position: relative;
+    top:15.5vh;
+    
+}
+
+.ContactSVG
+{
+    width:0%;
+    display: flex;
+    justify-content: center;
+}
+
+.ContactForm
+{
+    border-radius: 20px;
+    width: 100%;
+    box-shadow:  10px 10px 20px #9b9b9b,
+             -10px -10px 20px #ffffff;
+    display: grid;
+    place-items: center;
+    grid-row-gap: 0%;
+    align-content: space-evenly;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    transition: 1s;
+}
+
+.ContactInputBoxes
+{
+    display: flex;
+    width:80vw;
+    justify-content: space-evenly;
+    
+    /* border:0.1rem solid red; */
+}
+
+.ContactInput
+{
+    width:29vw;
+    height:5vh;
+}
+
+.ContactText
+{
+    width:65vw;
+    height:25vh;
+    border-radius: 10px;
+}
+
+
+.ContactButton
+{
+    border: none;
+    background-color: #e0e0e0;
+    width:20vw;
+    height: 5vh;
+    text-align: center;
+    /* transition: 2s; */
+    transition: 1s;
+    color:black;
+}
+
+input::placeholder
+{
+    /* margin: auto; */
+    text-align: center;
+    font-size: 0.6rem;
+}
+
 }

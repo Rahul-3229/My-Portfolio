@@ -53,8 +53,33 @@ body{
 
 
 
+@media (max-width:600px)
+{
+  .font1
+  {
+    font-size: 7.0rem !important;
+    line-height: 0.98;
+    letter-spacing: -3px;
+  }
+  .font2
+  {
+    font-size: 1.79rem !important;
+    letter-spacing:0.5px ;
+    line-height: 0.98;
+    
+  }
+}
 
-
+@media (max-width:398px)
+{
+  .font2
+  {
+    font-size: 1.68rem !important;
+    letter-spacing:0.5px ;
+    line-height: 0.98;
+    
+  }
+}
 
 
 @media(max-width:1599px)

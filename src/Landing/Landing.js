@@ -30,7 +30,7 @@ import React from "../Assets/react1.svg";
 import Vue from "../Assets/vuejs.svg";
 import TailwindCSS from "../Assets/tailwindcss.png";
 import MUI from "../Assets/muinew.svg";
-import SpringBoot from "../Assets/spring.png";
+import SpringBoot from "../Assets/FinalSpringBoot.png";
 import AWS from "../Assets/aws.svg";
 import TypeScript from "../Assets/typescript.svg";
 import Git from "../Assets/gitnew.svg";
@@ -40,7 +40,9 @@ import Figma from "../Assets/figma.svg";
 import JavaScript from "../Assets/js2.svg";
 import Java from "../Assets/java.svg";
 import Oracle from "../Assets/oracle.svg";
-import BigSVG from "../Jsons/json19.json"
+import BigSVG from "../Jsons/json19.json";
+
+
 
 export default function Landing()
 {
@@ -69,7 +71,7 @@ export default function Landing()
           
               // Add event listener to resize event
               window.addEventListener('resize', handleResize);
-          
+              console.log(viewportWidth+","+viewportHeight);
               // Cleanup the event listener when the component unmounts
               return () => {
                 window.removeEventListener('resize', handleResize);
@@ -124,8 +126,8 @@ export default function Landing()
                 <Lottie animationData={Section2SVG} loop={true} />
                 </div>
                 <div className="Section2Text">
-                <h1 className="font2 SectionHeading">
-                    GETTING TO KNOW ME:<br /><span className="SectionSubHeading font2">A LIFE IN TECH</span>
+                <h1 className="font2 SectionHeading ">
+                  <div className="SectionHeadingPhone"> GETTING TO KNOW ME:<br /><span className="SectionSubHeading font2">A LIFE IN TECH</span></div> 
                     <p className="font3 Section2SubText">
                     I am a full-stack developer with over five years of experience in developing web applications. I have created single-page applications using React and Vue.js, and I am highly skilled with front-end frameworks like Material UI and TailwindCSS. I have developed RESTful APIs using Spring Boot and managed database connections with Spring JPA, among other tasks. My previous role involved working with SQL and MySQL databases. Additionally, I am a certified AWS Developer Associate.
                 </p>
@@ -139,7 +141,7 @@ export default function Landing()
             <div className="section3">
             <div className="section3Text">
                <div className="font2 section3Box">
-                <h1 className="SectionHeading">PROUDLY CERTIFIED:<br /><span className="font2 SectionSubHeading">AWS DEVELOPER ASSOCIATE</span>
+                <h1 className="SectionHeading"><div className="SectionHeadingPhone">PROUDLY CERTIFIED:<br /><span className="font2 SectionSubHeading">AWS DEVELOPER ASSOCIATE</span></div>
                 <p className="section3Subtext font3">I am a certified AWS Developer Associate with experience deploying Spring Boot-based RESTful APIs on AWS API Gateway. I have utilized Lambda functions for event-driven applications and employed SNS to notify clients about anomalies in their applications. Additionally, I have worked extensively with the AWS SDK, making API calls to S3 for file operations, deploying web applications on EC2, and handling various other AWS services.</p>
                 </h1>
                </div>
@@ -213,6 +215,7 @@ export default function Landing()
 
         {/* ///////////////////////////////////// */}
 
+
         <div className="section7">
         <div className="section7ContactInfo">
         <p className="font3"><ContactComponent SVG={Contact4} link="" info="(380) 206-6260"/></p>
@@ -222,7 +225,7 @@ export default function Landing()
         </div>
         <div className="font2 section7control">NO ANGULAR COMPONENTS WERE HARMED IN MAKING OF THIS WEBSITE<br /><span className="font2 ContactSpanSection7">100% REACT.JS MADE</span></div>
         {/* <div className="font2 section7control">100% REACT.JS MADE</div> */}
-        <div className="font3 section7control">© 2025 Rahul Ilipilla. All Rights Reserved</div>
+        <div className="font3 section7control section7controlText ">© 2025 Rahul Ilipilla. All Rights Reserved</div>
         </div>        
 
         </div>

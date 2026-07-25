@@ -17,6 +17,8 @@ import  {Route, Routes} from "react-router-dom";
 
 import Confirmation from "./Confirmation/Confirmation.js";
 
+import Interview from "./Interview.js";
+
 function App() {
   return (
     <div className="App">
@@ -30,6 +32,8 @@ function App() {
       <Route path="/Experience" element={<Experience />} />
       <Route path="/Confirmation" element={ <Confirmation />} />
     </Routes>
+
+    {/* <Interview /> */}
 
      
     </div>

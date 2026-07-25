@@ -4,11 +4,11 @@ import "./Experience.css";
 import Lottie from "lottie-react";
 import {ReactTyped} from 'react-typed';
 import CodingCard from "./CodingCard";
-import React from "../Assets/react1.svg";
+import React from "../Assets/react3.svg";
 import Vue from "../Assets/vuejs.svg";
 import TailwindCSS from "../Assets/tailwindcss.png";
 import JavaScript from "../Assets/js2.svg";
-import Oracle from "../Assets/OracleSVG.svg";
+import Oracle from "../Assets/oracle.svg";
 import MicrosoftSQL from "../Assets/micro2.svg";
 import SpringBoot from "../Assets/spring.png";
 import AWS from "../Assets/FinalSVG.svg";
@@ -26,6 +26,10 @@ import SmallTailwindCSS from "../Assets/smalltailwindcss.png";
 import SmallJavaScript from "../Assets/smalljavascript.png";
 import SmallReact from "../Assets/smallreact.png";
 import SmallFigma from "../Assets/smallfigma.png";
+import SmallVite from "../Assets/smallvite.png";
+import SmallVite1 from "../Assets/smallvite1.png";
+import SmallVite2 from "../Assets/smallvite2.png";
+import SmallVite3 from "../Assets/smallvite3.png";
 
 
 import SmallOracle from "../Assets/smallOracle.svg";
@@ -57,6 +61,35 @@ import SmallJava from "../Assets/smallJava.png";
 import SmallPostman from "../Assets/smallPostman.png";
 import SmallGit from "../Assets/smallgit.png";
 import SmallGitHub from "../Assets/smallgithub.png";
+
+import GifSource from "./CodingGifCard.js";
+
+import Vue1 from "../Assets/Vue1.svg";
+
+import VueGif from "../Assets/vue.gif";
+import ReactGif from "../Assets/react.gif";
+import JavaScriptGif from "../Assets/javascript.gif";
+import TailwindCSSGif from "../Assets/tailwindcss.gif";
+import TailwindCSSGif1 from "../Assets/tailwind.gif";
+import SQL2 from "../Assets/sql2.gif";
+import SQL1 from "../Assets/mssql.gif";
+import React_Router from "../Assets/React-router2.gif";
+import React_Router1 from "../Assets/react-router.gif";
+import AWS1 from "../Assets/AWS11.gif";
+import AWS2 from "../Assets/AWS22.gif";
+import AWS3 from "../Assets/AWS33.gif";
+import MUIGif from "../Assets/mui.gif";
+import Spring1 from "../Assets/spring1.gif";
+import Spring2 from "../Assets/spring2.gif";
+import Spring3 from "../Assets/spring3.gif";
+import Spring4 from "../Assets/spring4.gif";
+import GitHubGif1 from"../Assets/GitHub.gif";
+import GitHubGif2 from"../Assets/GitHub1.gif";
+import GitHubGif3 from"../Assets/GitHub2.gif";
+import GitHubGif4 from"../Assets/GitHub3.gif";
+import Git1 from"../Assets/Git1.gif";
+import Git2 from"../Assets/Git2.gif";
+import Git3 from"../Assets/Git3.gif";
 
 
 export default function Experience ()
@@ -133,16 +166,20 @@ export default function Experience ()
 
         <div className="Experience1"> 
         <div className="Experience1Coding1">
-        <CodingCard svg ={React} color={Color1} delay={Delay1} pretext={Pretext1} compiler={Colour1} code={Code1} width1="0" cardwidth="15" cardheight="35"/>
-        <CodingCard svg ={Vue} color={Color2} delay={Delay2} pretext={Pretext2} compiler={Colour2} code={Code2} width1="40" cardwidth="15" cardheight="35"/>
-        <CodingCard svg ={TailwindCSS} color={Color3} delay={Delay3} pretext={Pretext3} compiler={Colour3} code={Code3} width1="90" lettersize="0.9" cardwidth="15" cardheight="35"/>
-        <CodingCard svg ={JavaScript} color={Color4} delay={Delay4} pretext={Pretext4} compiler={Colour4} code={Code4} lettersize="0.7" cardwidth="15" cardheight="35"/>
+        {/* <CodingCard svg ={React} color={Color1} delay={Delay1} pretext={Pretext1} compiler={Colour1} code={Code1} width1="0" cardwidth="15" cardheight="35"/> */}
+
+        <GifSource GifSource={VueGif} GifImage={Vue1} GifWidth="110" GifLeft="-3" />
+        <GifSource GifSource={ReactGif} GifImage={React} GifWidth="110" GifTop="" GifLeft="" />
+        <GifSource GifSource={TailwindCSSGif} GifImage={TailwindCSS} />
+        <GifSource GifSource={JavaScriptGif} GifImage={JavaScript}/>
+
         </div>
         <div className="Experience1Text">
         <div className="HeadingSpace">
         <h1 className="font2 JobHeading">DBAFFINITY<br /><span className="font2 HeadingSpaceSpan">FRONT-END DEVELOPER</span><span className="HeadingSpaceSpan1">REACT.JS AND VUE.JS</span></h1>
        
-        <p className="font3 HeadingDate">Febuary 2024 - Present <br /> <span className="PM">santosh.majji@dbaffinity.com<br />(Project Manager)</span></p> 
+        {/* <p className="font3 HeadingDate">Febuary 2024 - Present <br /> <span className="PM">santosh.majji@dbaffinity.com<br />(Project Manager)</span></p>  */}
+        <p className="font3 HeadingDate">Febuary 2024 - Present <br /></p> 
 
         <div className="font3 ExperienceKeyPoints">
         <p>•    Developed and maintained single-page applications (SPAs) using Vue.js, Vuex, and Vue Router.</p>
@@ -180,6 +217,10 @@ export default function Experience ()
         <img src={SmallJavaScript} className="ExperienceSmallLogo"></img>
         <h1 className="font3 ExperienceLogoName">JavaScript</h1>
         </div> 
+        <div className="ExperienceLogos">
+        <img src={SmallVite2} className="ExperienceSmallLogo"></img>
+        <h1 className="font3 ExperienceLogoName">Vite</h1>
+        </div> 
         </Marquee>  
         </div> 
         <a href='https://resumerahul1.s3.us-east-2.amazonaws.com/Rahul_I+(1).pdf'><button className="ExperienceButton font3">Know More</button> </a>   
@@ -190,17 +231,18 @@ export default function Experience ()
 
         <div className="Experience2">  
         <div className="Experience2Coding2">
-        <CodingCard svg ={Oracle} color={Color5} delay={Delay5} pretext={Pretext5} compiler={Colour5} code={Code5} width1="80" cardwidth="30" cardheight="30" lettersize="1.1"/>
-        <CodingCard svg ={MicrosoftSQL} color={Color6} delay={Delay6} pretext={Pretext6} compiler={Colour6} code={Code6} width1="90" cardwidth="30" cardheight="30" lettersize="1"/>
+     
+        <GifSource GifSource={SQL1} GifImage={MicrosoftSQL} GifWidth="100" GifTop="0" GifLeft="0" GifCardWidth="35" GifCardHeight=""/>
+        <GifSource GifSource={SQL2} GifImage={Oracle} GifWidth="110" GifTop="" GifLeft="" GifCardWidth="35" GifCardHeight=""/>
+     
         </div>  
-        {/* <div className="Experience2Text">
-        </div> */}
         <div className="Experience1Text">
         <div className="HeadingSpace">
         <h1 className="font2 JobHeading">ADS<br /><span className="font2 HeadingSpaceSpan">SQL DEVELOPER INTERN</span><span className="HeadingSpaceSpan1 HeadingSpaceSpan2">ORACLE AND MICROSOFT SQL</span></h1>
        
-        <p className="font3 HeadingDate">January 2023- March 2023<br /> <span className="PM">ptammina@yahoo.com<br />(Database Manager)</span></p> 
-
+        {/* <p className="font3 HeadingDate">January 2023- March 2023<br /> <span className="PM">ptammina@yahoo.com<br />(Database Manager)</span></p>  */}
+        <p className="font3 HeadingDate">January 2023- March 2023<br /></p> 
+  
         <div className="font3 ExperienceKeyPoints">
         <p>•    Designed and maintained database schemas, including creating tables, relationships, indexes, and views, to ensure proper data structure and integrity.</p>
         <p>•	  Developed and maintained EIS (Executive Information System) reports with interactive dashboards to deliver high-level business insights to top executives, enabling data-driven decision-making.</p>
@@ -242,21 +284,23 @@ export default function Experience ()
 
         <div className="Experience3"> 
         <div className="Experience3Coding3">
-        <CodingCard svg ={React} color={Color1} delay={Delay1} pretext={Pretext1} compiler={Colour1} code={Code1} width1="0" cardwidth="15"/>
-        <CodingCard svg ={SpringBoot} color={Color2} delay={Delay2} pretext={Pretext2} compiler={Colour2} code={Code2} width1="40" cardwidth="15"/>
-        <CodingCard svg ={ReactRouter} color={Color3} delay={Delay3} pretext={Pretext3} compiler={Colour3} code={Code3} width1="90" lettersize="0.9" cardwidth="15"/>
-        <CodingCard svg ={SpringJPA} color={Color4} delay={Delay4} pretext={Pretext4} compiler={Colour4} code={Code4} lettersize="0.7" cardwidth="15"/>
-        <CodingCard svg ={MUI} color={Color3} delay={Delay3} pretext={Pretext3} compiler={Colour3} code={Code3} width1="90" lettersize="0.9" cardwidth="15"/>
-        <CodingCard svg ={AWS} color={Color4} delay={Delay4} pretext={Pretext4} compiler={Colour4} code={Code4} lettersize="0.7" cardwidth="15"/>
+       
+       <GifSource GifSource={ReactGif} GifImage={React} GifWidth="110" GifTop="" GifLeft="" GifCardWidth="15" GifCardHeight="25"/>
+       <GifSource GifSource={MUIGif} GifImage={MUI} GifWidth="100" GifTop="" GifLeft="" GifCardWidth="15" GifCardHeight="25"/>
+       <GifSource GifSource={React_Router} GifImage={ReactRouter} GifWidth="190" GifHeight="40" GifTop="-1" GifLeft="-80" GifCardWidth="15" GifCardHeight="25"/>
+       <GifSource GifSource={Spring3} GifImage={SpringBoot} GifWidth="170" GifTop="" GifLeft="-2" GifCardWidth="15" GifCardHeight="25"/>
+       <GifSource GifSource={AWS2} GifImage={AWS} GifWidth="100" GifTop="" GifLeft="" GifCardWidth="15" GifCardHeight="25"/>
+       <GifSource GifSource={Spring2} GifImage={SpringJPA} GifWidth="250" GifTop="" GifLeft="-60" GifCardWidth="15" GifCardHeight="25"/>
+
+
         </div>
-        {/* <div className="Experience3Text">
-        </div> */}
+
 
         <div className="Experience3Text Experience1Text">
         <div className="HeadingSpace">
         <h1 className="font2 JobHeading">ARETE IT SERVICES PVT<br /><span className="font2 HeadingSpaceSpan">FULL-STACK DEVELOPER</span><span className="HeadingSpaceSpan1 HeadingSpaceSpan1">REACT.JS AND SPRING BOOT</span></h1>
        
-        <p className="font3 HeadingDate">January 2023- March 2023<br /> <span className="PM">ptammina@yahoo.com<br />(Database Manager)</span></p> 
+        <p className="font3 HeadingDate">January 2023- March 2023<br /> </p> 
 
         <div className="font3 ExperienceKeyPoints">
         <p>•	Converted Adobe XD designs into a responsive single-page application using React.js, enhancing user experience with dynamic transitions.</p>
@@ -330,21 +374,23 @@ export default function Experience ()
 
         <div className="Experience4"> 
         <div className="Experience4Coding4">
-        <CodingCard svg ={React} color={Color1} delay={Delay1} pretext={Pretext1} compiler={Colour1} code={Code1} width1="0" cardwidth="15" />
-        <CodingCard svg ={SpringBoot} color={Color2} delay={Delay2} pretext={Pretext2} compiler={Colour2} code={Code2} width1="40" cardwidth="15"/>
-        <CodingCard svg ={AWS} color={Color3} delay={Delay3} pretext={Pretext3} compiler={Colour3} code={Code3} width1="90" lettersize="0.9" cardwidth="15"/>
-        <CodingCard svg ={Git} color={Color4} delay={Delay4} pretext={Pretext4} compiler={Colour4} code={Code4} lettersize="0.7" cardwidth="15"/>
-        <CodingCard svg ={CSS} color={Color3} delay={Delay3} pretext={Pretext3} compiler={Colour3} code={Code3} width1="90" lettersize="0.9" cardwidth="15"/>
-        <CodingCard svg ={GitHub} color={Color4} delay={Delay4} pretext={Pretext4} compiler={Colour4} code={Code4} lettersize="0.7" cardwidth="15"/>
+        
+       <GifSource GifSource={ReactGif} GifImage={React} GifWidth="110" GifTop="" GifLeft="" GifCardWidth="15" GifCardHeight="25"/>
+       <GifSource GifSource={AWS3} GifImage={AWS} GifWidth="200" GifTop="" GifLeft="" GifCardWidth="15" GifCardHeight="25"/>
+       <GifSource GifSource={React_Router} GifImage={ReactRouter} GifWidth="135" GifTop="" GifLeft="" GifCardWidth="15" GifCardHeight="25"/>
+       <GifSource GifSource={Spring3} GifImage={SpringBoot} GifWidth="170" GifTop="" GifLeft="-2" GifCardWidth="15" GifCardHeight="25"/>
+       <GifSource GifSource={Git1} GifImage={Git} GifWidth="100" GifTop="" GifLeft="0" GifCardWidth="15" GifCardHeight="25"/>
+       <GifSource GifSource={GitHubGif4} GifImage={GitHub} GifWidth="230" GifTop="" GifLeft="0" GifCardWidth="15" GifCardHeight="25"/>
+        
         </div>
         <div className="Experience3Text Experience1Text">
         <div className="HeadingSpace">
         <h1 className="font2 JobHeading">CONCENTRIX CATALYST<br /><span className="font2 HeadingSpaceSpan">FULL-STACK DEVELOPER</span><span className="HeadingSpaceSpan4">REACT.JS AND SPRING BOOT</span></h1>
        
-        <p className="font3 HeadingDate">January 2018- December 2019<br /> <span className="PM">ptammina@yahoo.com<br />(Database Manager)</span></p> 
+        <p className="font3 HeadingDate">January 2018- December 2019<br /></p> 
 
         <div className="font3 ExperienceKeyPoints">
-        <p>•	Developed responsive e-commerce websites using React.js, Redux for state management, and React Router for navigation, with efficient component reuse and API calls via React Hooks (useEffect, useRef).</p>
+        <p>•	Developed and maintained several React-based web applications using class components to manage state and lifecycle methods..</p>
         <p>•    Designed and implemented pixel-perfect React components from PSD designs, maintaining consistent layout using CSS and responsive techniques.</p>
         <p>•    Managed global application state with Redux, using reducers to update the state tree and Fetch API for seamless API integrations.</p>    
         <p>•    Utilized GitHub for version control, employing branching, pull requests, and code reviews for collaborative development.</p>

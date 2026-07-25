@@ -227,8 +227,8 @@
     justify-content: space-evenly;
     align-items: center;
     position: relative;
-    left:6.8%;
-    gap:20%;
+    left:4.3%;
+    gap:18%;
 }
 
 
@@ -309,7 +309,7 @@
 {
     width:55%;
     position: relative;
-    left:1.9vw;
+    left:2.4vw;
     display: grid;
     grid-template-rows: repeat(2, 2fr);
     grid-template-columns: repeat(2, 2fr);
@@ -447,3 +447,55 @@ top:80vh;
     }
 }
 
+
+@media(max-height:703px)
+{
+    .Experience1
+    {
+        height:110vh;
+        
+    }
+
+    .Experience2
+    {
+        height:100vh;
+    }
+
+    .Experience3
+    {
+        height:115vh;
+    }
+
+    .Experience4
+    {
+        height:115vh;
+    }
+}
+
+
+@media(max-height:620px)
+{
+    .Experience1
+    {
+        height:120vh;
+        
+    }
+
+    .Experience2
+    {
+        height:110vh;
+    }
+
+    .Experience3
+    {
+        height:125vh;
+    }
+
+    .Experience4
+    {
+        height:135vh;
+    }
+
+
+
+}
