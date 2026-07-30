@@ -53,6 +53,7 @@ import Figma from "./Assets/figma.svg";
 import JavaScript from "./Assets/javascript.svg";
 import Java from "./Assets/java.svg";
 import Oracle from "./Assets/oracle.svg";
+import Django from "./Assets/django.svg";
 
 
 
@@ -215,6 +216,7 @@ return (
 <LogoCard  Img={Java}/>  
 <LogoCard  Img={SpringBoot}/>  
 <LogoCard  Img={AWS}/>  
+<LogoCard  Img={Django}/>
 
    
 </div> 

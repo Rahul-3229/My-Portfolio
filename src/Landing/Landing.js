@@ -41,6 +41,7 @@ import JavaScript from "../Assets/js2.svg";
 import Java from "../Assets/java.svg";
 import Oracle from "../Assets/oracle.svg";
 import BigSVG from "../Jsons/json19.json";
+import Django from "../Assets/django.svg";
 
 
 
@@ -177,8 +178,8 @@ export default function Landing()
 
         <LogoCard  Img={React}/>    
         <LogoCard  Img={Vue}/>
-        <LogoCard  Img={Oracle}/>  
-        <LogoCard  Img={Java}/>  
+        <LogoCard  Img={TypeScript}/>  
+        <LogoCard  Img={Django}/>  
         <LogoCard  Img={SpringBoot}/>  
         <LogoCard  Img={AWS}/>  
 
